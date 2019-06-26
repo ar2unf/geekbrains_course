@@ -753,9 +753,9 @@
 }
 
 .feedback_submit:active,
-feedback_message:active,
-feedback_email:active,
-feedback_name:active {
+.feedback_message:active,
+.feedback_email:active,
+.feedback_name:active {
     box-shadow: none;
     outline: none;
 }
