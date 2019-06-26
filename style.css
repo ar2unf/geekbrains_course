@@ -129,7 +129,8 @@
     font-weight: 400;
     line-height: 24px;
 }
-.about_product_text:nth-last-child(1){
+
+.about_product_text:nth-last-child(1) {
     margin: 0;
 }
 
@@ -398,6 +399,10 @@
     line-height: 1.286;
 }
 
+.reviews_avtor:hover {
+    text-decoration: underline;
+}
+
 .buy_title {
     display: block;
     width: 100%;
@@ -469,13 +474,14 @@
     color: rgb(68, 81, 97);
     font-weight: bold;
     line-height: 40px;
-    box-shadow: 0 0 80px 2px rgba(0,0,0,0.55);
+    box-shadow: 0 0 80px 2px rgba(0, 0, 0, 0.55);
 }
 
-.buy_item_btn:hover{
-box-shadow: 0 0 44px 10px rgba(0,0,0,0.55);
+.buy_item_btn:hover {
+    box-shadow: 0 0 44px 10px rgba(0, 0, 0, 0.55);
 }
-.buy_item_btn:active{
+
+.buy_item_btn:active {
     box-shadow: none;
 }
 
@@ -557,13 +563,14 @@ box-shadow: 0 0 44px 10px rgba(0,0,0,0.55);
     color: rgb(255, 255, 255);
     line-height: 0.4;
     border-radius: 50%;
-    box-shadow: 0 0 44px 2px rgba(0,0,0,0.55);
+    box-shadow: 0 0 44px 2px rgba(0, 0, 0, 0.55);
 }
 
-.socials_btn:hover{
-box-shadow: 0 0 44px 10px rgba(0,0,0,0.55);
+.socials_btn:hover {
+    box-shadow: 0 0 44px 10px rgba(0, 0, 0, 0.55);
 }
-.socials_btn:active{
+
+.socials_btn:active {
     box-shadow: none;
 }
 
@@ -582,12 +589,18 @@ box-shadow: 0 0 44px 10px rgba(0,0,0,0.55);
     margin: 0 0 25px 0;
 }
 
+.contact_information_skype:hover,
+.contact_information_icq:hover,
+.contac_information_email:hover,
+.contac_information_phone:hover {
+    text-decoration: underline;
+}
+
 .socials {
     width: 100%;
     box-sizing: border-box;
     width: 270px;
     margin: 0 0 0 -30px;
-    
 }
 
 .socials:before {
@@ -724,6 +737,26 @@ box-shadow: 0 0 44px 10px rgba(0,0,0,0.55);
     height: 40px;
     align-self: center;
     box-sizing: border-box;
+    box-shadow: 0 0 44px 2px rgba(0, 0, 0, 0.55);
+}
+
+.feedback_submit:hover {
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.55);
+}
+
+.feedback_submit:active,
+feedback_message:active,
+feedback_email:active,
+feedback_name:active {
+    box-shadow: none;
+    outline: none;
+}
+.feedback_message:focus,
+.feedback_email:focus,
+.feedback_name:focus {
+    box-shadow: none;
+    outline: none;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.55);
 }
 
 .copy {
@@ -751,4 +784,8 @@ box-shadow: 0 0 44px 10px rgba(0,0,0,0.55);
 
 .copy_link {
     text-decoration: none;
+}
+
+.copy_link:hover {
+    text-decoration: underline;
 }
