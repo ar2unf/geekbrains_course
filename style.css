@@ -475,6 +475,10 @@
     font-weight: bold;
     line-height: 40px;
     box-shadow: 0 0 80px 2px rgba(0, 0, 0, 0.55);
+    /* боремся с переносоми слов и обрезаем лшнее за многоточие*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .buy_item_btn:hover {
@@ -738,6 +742,10 @@
     align-self: center;
     box-sizing: border-box;
     box-shadow: 0 0 44px 2px rgba(0, 0, 0, 0.55);
+    /* боремся с переносоми слов и обрезаем лшнее за многоточие*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .feedback_submit:hover {
@@ -751,6 +759,7 @@ feedback_name:active {
     box-shadow: none;
     outline: none;
 }
+
 .feedback_message:focus,
 .feedback_email:focus,
 .feedback_name:focus {
