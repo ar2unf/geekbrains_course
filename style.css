@@ -469,6 +469,14 @@
     color: rgb(68, 81, 97);
     font-weight: bold;
     line-height: 40px;
+    box-shadow: 0 0 80px 2px rgba(0,0,0,0.55);
+}
+
+.buy_item_btn:hover{
+box-shadow: 0 0 44px 10px rgba(0,0,0,0.55);
+}
+.buy_item_btn:active{
+    box-shadow: none;
 }
 
 .buy_item {
@@ -548,6 +556,15 @@
     font-family: "Socialico";
     color: rgb(255, 255, 255);
     line-height: 0.4;
+    border-radius: 50%;
+    box-shadow: 0 0 44px 2px rgba(0,0,0,0.55);
+}
+
+.socials_btn:hover{
+box-shadow: 0 0 44px 10px rgba(0,0,0,0.55);
+}
+.socials_btn:active{
+    box-shadow: none;
 }
 
 .contact_information_skype,
@@ -570,6 +587,7 @@
     box-sizing: border-box;
     width: 270px;
     margin: 0 0 0 -30px;
+    
 }
 
 .socials:before {
