@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
       <title>Product page</title>
-      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/style.css">
    </head>
    <body>
@@ -161,9 +161,10 @@
             <section class="contacts">
                <span class="contact-title">Contacts</span>
                <form class="feedback">
-                  <input type="text" class="feedback_name" placeholder="You name:">
-                  <input type="email" class="feedback_email" placeholder="You email:">
-                  <textarea name="message" id="mes" cols="30" rows="10" class="feedback_message" placeholder="You message:"></textarea>
+                 <!-- наваерное в такой простой форме нет смысла использовать fieldset-->
+                  <input id="user_name" type="text" class="feedback_name" placeholder="You name:">
+                  <input  id="user_email" type="email" class="feedback_email" placeholder="You email:">
+                  <textarea id="user_message" name="message" id="mes" cols="30" rows="10" class="feedback_message" placeholder="You message:"></textarea>
                   <input type="submit" class="feedback_submit" value="send"> 
                </form>
                <div class="contact_information">
