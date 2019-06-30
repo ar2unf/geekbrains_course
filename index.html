@@ -4,8 +4,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
       <title>Product page</title>
-      <link rel="stylesheet" href="normalize.css">
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
    </head>
    <body>
       <div class="container">
@@ -28,7 +28,10 @@
                   <p class="about_product_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo&nbsp;at. Natus eos, eligendi illum rerum omnis porro&nbsp;ex, magni, explicabo veniam incidunt in&nbsp;quam sapiente ut&nbsp;ipsum.</p>
                   <p class="about_product_text">Pariatur iure ab&nbsp;sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                </div>
-               <video src="#" class="about_product_video" width="430" height="245"></video>
+               <video class="about_product_video" width="430" height="245" controls="controls" poster="video/video_1.jpg" muted autoplay loop>
+                   <source src="video/video_1.mp4" type='video/mp4'>
+                   Видео не поддерживается вашим браузером для просмотра вы можете <a href="video/video_1.mp4">скачать</a> видео.
+               </video>
             </section>
             <section class="pluses">
                <span class="pluses_title">Dignity and pluses product</span>
@@ -158,9 +161,10 @@
             <section class="contacts">
                <span class="contact-title">Contacts</span>
                <form class="feedback">
-                  <input type="text" class="feedback_name" placeholder="You name:">
-                  <input type="email" class="feedback_email" placeholder="You email:">
-                  <textarea name="message" id="mes" cols="30" rows="10" class="feedback_message" placeholder="You message:"></textarea>
+                 <!-- наваерное в такой простой форме нет смысла использовать fieldset-->
+                  <input id="user_name" type="text" class="feedback_name" placeholder="You name:">
+                  <input  id="user_email" type="email" class="feedback_email" placeholder="You email:">
+                  <textarea id="user_message" name="message" id="mes" cols="30" rows="10" class="feedback_message" placeholder="You message:"></textarea>
                   <input type="submit" class="feedback_submit" value="send"> 
                </form>
                <div class="contact_information">
