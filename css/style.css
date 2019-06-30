@@ -55,7 +55,7 @@
 .main_header_list_item:before {
     display: block;
     content: "";
-    background-image: url(img/check_icon.png);
+    background-image: url(../img/check_icon.png);
     -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
@@ -193,7 +193,7 @@
     width: 32px;
     height: 32px;
     background-color: #445162;
-    background-image: url(/img/Layer_2.png);
+    background-image: url(../img/Layer_2.png);
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -618,7 +618,7 @@
 .contact_information_skype:before {
     display: block;
     content: "";
-    background-image: url(/img/skype.png);
+    background-image: url(../img/skype.png);
     -webkit-background-size: contain;
     filter: invert(100%);
     background-size: contain;
@@ -634,7 +634,7 @@
 .contact_information_icq:before {
     display: block;
     content: "";
-    background-image: url(/img/icq.png);
+    background-image: url(../img/icq.png);
     -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
@@ -649,7 +649,7 @@
 .contac_information_email:before {
     display: block;
     content: "";
-    background-image: url(/img/email.png);
+    background-image: url(../img/email.png);
     -webkit-background-size: contain;
     filter: invert(100%);
     background-size: contain;
@@ -665,7 +665,7 @@
 .contac_information_phone:before {
     display: block;
     content: "";
-    background-image: url("/img/phone.png");
+    background-image: url("../img/phone.png");
     -webkit-background-size: contain;
     filter: invert(100%);
     background-size: contain;
