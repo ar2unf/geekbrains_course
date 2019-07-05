@@ -1,0 +1,75 @@
+// /** переменные для  основного  контейнера сайта****/
+@width: 1920px;
+@min-height: 100px;
+@margin: 0 auto;
+@bgc-site: #fff;
+// /*************************************************/
+
+// /*********Подключаем шрифты Raleway**************/
+@font_raleway: 'raleway';
+@font_bold: '@{font_raleway}-bold';
+@font_extra_bold: '@{font_raleway}-extrabold';
+@font_medium: '@{font_raleway}-medium';
+@font_semibold: '@{font_raleway}-semibold';
+@font_regular: '@{font_raleway}-regular';
+
+@font-face {
+  .font(@font_raleway);
+}
+@font-face {
+  .font(@font_raleway; @font_bold; 700);
+}
+@font-face {
+  .font(@font_raleway; @font_extra_bold; 800);
+}
+@font-face {
+  .font(@font_raleway; @font_medium; 500);
+}
+@font-face {
+  .font(@font_raleway; @font_semibold; 600);
+}
+@font-face {
+  .font(@font_raleway; @font_regular; 400);
+}
+// /******* подключаме шрифты Montserat*************************************/
+@font_montserrat: montserrat;
+@font_motserrat_light: '@{font_montserrat}-light';
+@font_motserrat_regular: '@{font_montserrat}-regular';
+@font_motserrat_ultralight: '@{font_montserrat}-ultralight';
+
+@font-face {
+  .font(@font_montserrat);
+}
+@font-face {
+  .font(@font_montserrat; @font_motserrat_light; 300);
+}
+@font-face {
+  .font(@font_montserrat; @font_motserrat_regular; 400);
+}
+@font-face {
+  .font(@font_montserrat; @font_motserrat_ultralight; 200);
+}
+// /************************************************************************/
+@font_roboto :roboto;
+@font_roboto_regular: '@{font_roboto}-regular';
+
+@font-face {
+  .font(@font_roboto);
+}
+@font-face {
+  .font(@font_roboto; @font_roboto_regular; 400);
+}
+
+
+// /*** универсальный миксин для подключения шрифтов***********************/
+.font(@fontName; @urlName: @fontName; @weight: normal; @style: normal) {
+  font-family: '@{fontName}';
+  src: url('../fonts/@{fontName}/@{urlName}.eot');
+  src: url('../fonts/@{fontName}/@{urlName}.eot#iefix') format('embedded-opentype'),
+  url('../fonts/@{fontName}/@{urlName}.woff') format('woff'),
+    url('../fonts/@{fontName}/@{urlName}.ttf') format('truetype'),
+    url('../fonts/@{fontName}/@{urlName}.svg') format('svg');
+    font-weight: @weight;
+    font-style: @style;
+}
+// /***********************************************************************/
